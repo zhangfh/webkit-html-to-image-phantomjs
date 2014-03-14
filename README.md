@@ -21,6 +21,10 @@ The following installation steps have been verified to work on Ubuntu:
     sudo add-apt-repository ppa:chris-lea/node.js
     sudo apt-get update
     sudo apt-get install nodejs npm
+    I cannot update repository success, so firstly, I using sudo apt-get install nodejs to install nodejs.
+    How to install npm:
+      curl -O -L -k https://npmjs.org/install.sh
+      sudo sh install.sh
     ```
 
 3. **Install phantom.js:** (Instructions assume a 64 bit system. Substitute the 32 bit version if needed.)
