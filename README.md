@@ -31,8 +31,7 @@ The following installation steps have been verified to work on Ubuntu:
 
     ```bash
     wget https://phantomjs.googlecode.com/files/phantomjs-1.9.0-linux-i686.tar.bz2
-    (This address cannot work, using following command:
-      wget https://phantomjs.googlecode.com/files/phantomjs-1.9.2-linux-i686.tar.bz2)
+
     tar xvf phantomjs-1.9.0-linux-i686.tar.bz2
     sudo mv phantomjs-1.9.0-linux-i686/bin/phantomjs /usr/bin/phantomjs
     ```
