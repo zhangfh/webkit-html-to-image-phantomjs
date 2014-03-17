@@ -48,3 +48,14 @@ The following installation steps have been verified to work on Ubuntu:
     ```bash
     ./launch.sh
     ```
+6. **Test:**
+
+    ```bash
+    I can run this server succesfully
+    Using command line to test:
+    #curl -X POST -H "Content-Type: text/html" -d     '{"cities":["Seoul","Shanghai","Taipei"]}' 192.168.1.8:3000
+    It will output result to the console, I change the code as following:
+    imageData = page.renderBase64('PNG');==>imageData = page.render('./test.png'); (save it)
+    imageData = page.render('./test.png');==>page.viewportSize = { width: 384, height: 554 };(change size)
+    
+    ```
