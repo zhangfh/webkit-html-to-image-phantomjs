@@ -42,6 +42,9 @@ The following installation steps have been verified to work on Ubuntu:
     sudo npm install -g supervisor
     cd webkit-html-to-image-phantomjs
     npm install
+    (Because of network enviroment, I use the following command to change npm source:
+      npm config set registry http://registry.cnpmjs.org
+      npm info underscore
     ```
     
 5. **Start the server:**
