@@ -59,12 +59,12 @@ The following installation steps have been verified to work on Ubuntu:
     #curl -X POST -H "Content-Type: text/html" -d     '{"cities":["Seoul","Shanghai","Taipei"]}' 192.168.1.8:3000
     It will output result to the console, I change the code as following:
     imageData = page.renderBase64('PNG');==>imageData = page.render('./test.png'); (save it)
-    imageData = page.render('./test.png');==>page.viewportSize = { width: 384, height: 554 };(change size)
+    page.viewportSize = { width: 1024, height: 768 };==>page.viewportSize = { width: 384, height: 554 };(change size)
     Using php to test it(I write a sample code to test it, assume I have a static webpage，I will capture it)
     <?php
 
     function httpGet() {
-    $url = 'http://127.0.0.1:8888/template.php';
+    $url = 'http://127.0.0.1:8888/template.php';//static webpage
     
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
