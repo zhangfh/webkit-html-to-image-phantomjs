@@ -45,6 +45,8 @@ The following installation steps have been verified to work on Ubuntu:
     (Because of network enviroment, I use the following command to change npm source:
       npm config set registry http://registry.cnpmjs.org
       npm info underscore
+     after that, npm install can work normally)
+     
     ```
     
 5. **Start the server:**
